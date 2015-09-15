@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %} <h1>{{movie.title}}</h1> {% endblock %}
+{% block body%}
+<article>
+    <header>
+    <h1>{{ movie.title }}</h1>
+    </header>
+</article>
+<p data-genre="{{movie.genre}}">Genre: {{ movie.genre }}</p>
+<p data-year="{{movie.year}}">Year: {{ movie.year }}</p>
+{% endblock %}

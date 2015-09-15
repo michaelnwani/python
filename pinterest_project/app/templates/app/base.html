@@ -1,0 +1,17 @@
+{% load static from staticfiles %}
+<!doctype html>
+<html>
+<head>
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static "base.css" %}">
+    <script src="{% static "jquery-1.11.1.min.js" %}"></script>
+    <script src="{% static "jquery-ui-1.10.4.min.js" %}"></script>
+    <script src="{% static "main.js" %}"></script>
+</head>
+<body>
+{% block body %}
+
+
+{% endblock %}
+</body>
+</html>
